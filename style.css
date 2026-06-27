@@ -76,3 +76,12 @@ button {
     pointer-events: none; /* Чтобы он не мешал нажимать на кнопку */
     user-select: none;   /* Чтобы текст нельзя было случайно выделить */
 }
+@media (max-width: 600px) {
+    #no {
+        /* Опускаем начальную позицию кнопки чуть ниже на смартфонах */
+        top: 65% !important; 
+        left: 50% !important;
+        /* Идеально центрируем её по горизонтали */
+        transform: translateX(-50%) !important; 
+    }
+}
