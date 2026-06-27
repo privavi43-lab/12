@@ -52,36 +52,12 @@ button {
 }
 .heart {
     position: fixed;
-    top: -40px;
-    pointer-events: none;
-    z-index: -1; /* Опускает сердечки на самый задний план, под карточку проекта */
+    top: -20px;
     animation: fall 6s linear forwards;
 }
-
 @keyframes fall {
     to {
         transform: translateY(110vh);
         opacity: 0;
-    }
-}
-.sad-smile {
-    position: fixed;
-    /* Координаты точно как у начальной кнопки Нет */
-    left: 50%;
-    top: 58.5%;
-    /* Центрируем смайлик внутри кнопки */
-    transform: translate(150%, 70%);
-    font-size: 20px;     /* Размер текста смайлика */
-    z-index: -1;         /* Прячем его за кнопку */
-    pointer-events: none; /* Чтобы он не мешал нажимать на кнопку */
-    user-select: none;   /* Чтобы текст нельзя было случайно выделить */
-}
-@media (max-width: 600px) {
-    #no {
-        /* Опускаем начальную позицию кнопки чуть ниже на смартфонах */
-        top: 65% !important; 
-        left: 50% !important;
-        /* Идеально центрируем её по горизонтали */
-        transform: translateX(-50%) !important; 
     }
 }
