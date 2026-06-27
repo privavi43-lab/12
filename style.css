@@ -46,8 +46,7 @@ button {
     background: #777;
     color: #fff;
     position: fixed;
-    left: 50%;
-    top: 58.5%;
+    /* Убрали жесткие left и top, теперь их ставит JS */
     transition: left 0.08s linear, top 0.08s linear;
 }
 .heart {
