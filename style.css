@@ -65,6 +65,7 @@ button {
     position: fixed;
     top: -40px;
     pointer-events: none;
+    z-index: -1; /* Опускает сердечки на самый задний план, под карточку проекта */
     animation: fall 6s linear forwards;
 }
 @keyframes fall {
