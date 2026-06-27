@@ -78,10 +78,6 @@ button {
 }
 @media (max-width: 600px) {
     #no {
-        /* Опускаем начальную позицию кнопки чуть ниже на смартфонах */
-        top: 65% !important; 
-        left: 90% !important;
-        /* Идеально центрируем её по горизонтали */
-        transform: translateX(-50%) !important; 
+        margin-top: 40px !important;
     }
 }
