@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fff8fa, #ffeef2, #fffdf9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.card {
+    background: #ffffffd9;
+    padding: 30px;
+    border-radius: 22px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.12);
+    text-align: center;
+    max-width: 700px;
+}
+.cat {
+    width: 180px;
+}
+.hidden {
+    display: none;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+    position: relative;
+}
+button {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 14px;
+    font-size: 22px;
+    cursor: pointer;
+}
+#yes {
+    background: #ff5c93;
+    color: #fff;
+    position: relative;
+    left: -100px;
+}
+#no {
+    background: #777;
+    color: #fff;
+    position: fixed;
+    left: 50%;
+    top: 58.5%;
+    transition: left 0.08s linear, top 0.08s linear;
+}
+.heart {
+    position: fixed;
+    top: -40px;
+    pointer-events: none;
+    z-index: -1; /* Опускает сердечки на самый задний план, под карточку проекта */
+    animation: fall 6s linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh);
+        opacity: 0;
+    }
+}
+.sad-smile {
+    position: fixed;
+    /* Координаты точно как у начальной кнопки Нет */
+    left: 50%;
+    top: 58.5%;
+    /* Центрируем смайлик внутри кнопки */
+    transform: translate(150%, 70%);
+    font-size: 20px;     /* Размер текста смайлика */
+    z-index: -1;         /* Прячем его за кнопку */
+    pointer-events: none; /* Чтобы он не мешал нажимать на кнопку */
+    user-select: none;   /* Чтобы текст нельзя было случайно выделить */
+}
