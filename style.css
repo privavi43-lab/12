@@ -49,15 +49,27 @@ button {
     left: 50%;
     top: 58.5%;
     transition: left 0.08s linear, top 0.08s linear;
+    z-index: 10;
+}
+.sad-smile {
+    position: fixed;
+    left: 50%;
+    top: 58.5%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    z-index: 1;
+    pointer-events: none;
+    user-select: none;
 }
 .heart {
     position: fixed;
-    top: -20px;
+    top: -40px;
+    pointer-events: none;
     animation: fall 6s linear forwards;
 }
 @keyframes fall {
     to {
-        transform: translateY(110vh);
+        transform: translateY(115vh);
         opacity: 0;
     }
 }
