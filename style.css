@@ -80,7 +80,7 @@ button {
     #no {
         /* Опускаем начальную позицию кнопки чуть ниже на смартфонах */
         top: 65% !important; 
-        left: 50% !important;
+        left: 90% !important;
         /* Идеально центрируем её по горизонтали */
         transform: translateX(-50%) !important; 
     }
