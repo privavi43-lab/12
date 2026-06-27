@@ -76,7 +76,24 @@ button {
     user-select: none;   /* Чтобы текст нельзя было случайно выделить */
 }
 @media (max-width: 600px) {
+    .buttons {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 20px !important;
+        position: relative !important;
+        margin-top: 30px !important;
+    }
     #no {
-        margin-top: 40px !important;
+        position: relative !important;
+        left: auto !important;
+        top: auto !important;
+        margin: 0 !important;
+        transition: none !important; /* Убираем плавность только для первого кадра */
+    }
+    #yes {
+        position: relative !important;
+        left: auto !important;
+        top: auto !important;
     }
 }
